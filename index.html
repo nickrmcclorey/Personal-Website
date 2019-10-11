@@ -13,15 +13,40 @@
         </div>
     </div>
     <div id="profile">
-        <h3 class="greeting">Hi, I'm a student at the University of Cincinnati majoring in Computer Science</h3>
-        <div class="contact">Contact</div>
-        <div class="about">About</div>
+        <h2 class="greeting">Hi, I'm a student at the University of Cincinnati majoring in Computer Science</h2>
+        <div id="profile-content">
+
+            <img src="/home/nick/Pictures/headshot.jpg" id="mugshot">
+            <div class="about">
+                <span>About</span>
+                <p>I'm a computer science student at the University of Cincinnati. I'm a software developer</p>
+            </div>
+            <div class="contact">
+                <span>Contact</span>
+                <p>Email: mcclorns@mail.uc.edu</p>
+                <p>Phone: (513) 239-0252</p>
+                <p>Address: 6905 Gatewood Ct.</p>
+                <span>Cincinnati OH, 45241</span>
+            </div>
+        </div>
+    </div>
+    <div id="experiences">
+        <span style="font-size: 240%;">Experience</span>
+        <br>
+        <span style="font-size: 70%;">That's right. This kid's got experience</span>
+        <br><br><br><br><br>
+        <div id="projetech" class="experience-card">
+            <span class="experience-header">Projetech - Software Developer Co-op</span>
+            <ul>
+                <li>sdf</li>
+            </ul>
+        </div>
     </div>
 
 </body>
 <style>
 
-body, div {
+body, div{
     margin: 0px;
     padding: 0px;
 }
@@ -31,10 +56,47 @@ body, div {
     width: 100vw;
 }
 
+#profile {
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    background-color: white;
+}
+
+#profile-content {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding: 100px 10px 10px 250px;
+}
+
+#profile-content > img {
+    height: 200px;
+}
+
+#experiences {
+    background-color: rgb(111, 209, 107);
+    text-align: center;
+    padding: 30px;
+}
+
+.about {
+    max-width: 500px;
+}
+
+.contact > p{
+    text-align: left;
+}
+
 .background {
-    z-index: 0;
-    height: 100%;
-    width: 100%;
+    z-index: -3;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+
+.experience-header {
+    font-size: 150%;
 }
 
 #intro-card {
