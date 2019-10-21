@@ -53,17 +53,77 @@
         </div>
     </div>
     <div class="resume">
-        <span class="experience-header">Resume and Strengths</span>
-        <br>
-        <a target="_blank" href="Nicholas_McClorey_Resume.pdf">Resume</a>
+        <div>
+            <a target="_blank" href="Nicholas_McClorey_Resume.pdf"><button>Resume</button></a>
+            <p>Career Goals: be the best</p>
+        </div>
+        <div>
+            <span>5 Clifton Strengths</span>
+            <p>Learner</p>
+            <p>Relator</p>
+            <p>Achiever</p>
+            <p>Ideation</p>
+            <p>Focus</p>
+        </div>
+    </div>
+    <div class="projects">
+        <span class="projects-title">Personal Projects</span>
+        <br><br><br>
+        <div class="project">
+            <img src="tropic.png"/>
+            <div style="margin: 45px;">
+                <span style="font-size: 150%;">Tropic File Browser</span>
+                <br><br>
+                <span>A multi-tab, multi-pane file browser with customization in mind</span>
+                <ul style="font-size: 120%; padding: 10px;">
+                    <li>Desktop application built on Node JS and Electron</li>
+                    <li>Built in keyboard shortcuts</li>
+                    <li>Multiple Tabs</li>
+                    <li>Customizable Icons</li>
+                    <li>Choose which program opens file</li>
+                </ul>
+                <a href="https://github.com/nickrmcclorey/tropic">
+                    <img src="github.png" class="github-icon" />
+                </a>
+            </div>
+        </div>
+        <div class="project">
+                <img src="grepolis.png"/>
+                <div style="margin: 45px;">
+                    <span style="font-size: 150%;">Grepolis Farming Bot</span>
+                    <br><br>
+                    <span>Using selenium to farm resources in an online game</span>
+                    <ul style="font-size: 120%; padding: 10px;">
+                        <li>Desktop application built on Python and Tkinter</li>
+                        <li>Bot logs into account every five minutes to farm resources</li>
+                        <li>GUI provides user friendly interface to configure bot</li>
+                    </ul>
+                    <a href="https://github.com/nickrmcclorey/Grepolis-Bot">
+                        <img src="github.png" class="github-icon" />
+                    </a>
+                </div>
     </div>
 
+    <div class="involvment">
+        <span>Involvment</span>
+        <div>
+            <div>
+                <span>Wesley Chapel Mission Center</span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <span>Friar's Club Tutoring</span>
+            </div>
+        </div>
+    </div>
 </body>
 <style>
 
 body, div{
     margin: 0px;
     padding: 0px;
+    font-family: "sans-seriff";
 }
 
 #introduction {
@@ -140,8 +200,63 @@ body, div{
 }
 
 .resume {
-    background-color: white;
+    background-color: #36363c;
+    color: whitesmoke;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0px;
+    padding: 40px 20%;
+}
+
+a > button {
+    font-size: 180%;
+    border-radius: 5px;
+}
+
+a > button:hover {
+    background-color: white;
+    color: rgb(4, 126, 0);
+    cursor:pointer
+}
+
+.projects {
+    background: whitesmoke;
+    padding-top: 50px;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    justify-content: start;
+}
+
+.projects-title {
+    font-size: 230%;
+    margin-left: 40%;
+}
+
+.project img {
+    width: 100%;
+}
+
+li {
+    margin: 10px;
+}
+
+.involvment {
+    background: whitesmoke;
+}
+
+.github-icon {
+    max-width: 40px;
+    height: 40px;
+}
+
+.github-icon:hover {
+    cursor: pointer;
+    border-radius: 20px;
+    background: rgb(111, 209, 107);
 }
 
 #intro-card {
